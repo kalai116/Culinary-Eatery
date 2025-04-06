@@ -1,0 +1,74 @@
+/* Styling sheet */
+body
+{
+	background-image: url("BG2.jpeg");
+	background-size: cover;
+}
+.logo img
+{
+	border-radius: 50%;
+	float: left;
+	height: 50px;
+	margin: 1px;
+	width: 50px;
+}
+h1,h2
+{
+	text-align: center;
+	color: brown;
+}
+hr.CE
+{
+	border-bottom: 5px solid red;
+}
+h3
+{
+	text-align: center;
+	word-spacing: 100px;
+}
+.IC
+{
+	display:flex;
+	justify-content: center;
+	margin-bottom: 10%;
+}
+.food1 img
+{
+	display: flex;
+	width:250px;
+	height:350px;  
+    object-fit: cover;
+	border-radius: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.food2 img
+{
+	display: flex;
+	width:250px;
+	height:350px;  
+    object-fit: cover;
+	border-radius: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.food3 img
+{
+	display: flex;
+	width:250px;
+	height:350px;  
+    object-fit: cover;
+	border-radius: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.food4 img
+{
+	display: flex;
+	width:250px;
+	height:350px;  
+    object-fit: cover;
+	border-radius: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
