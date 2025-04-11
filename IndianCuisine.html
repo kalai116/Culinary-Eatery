@@ -1,0 +1,182 @@
+<!Doctype HTML>
+
+<html lang="en">
+<head> 
+<title> Culinary Eatery </title>
+<link href="https://fonts.googleapis.com/css2?family=Underdog&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="foodss.css">
+<link rel="bootstrap" href="bootstrap.css">
+<link rel="bootstrapbundle" href="bootstrap.bundle.js">
+<meta name="viewport" content="width=device-width, initial-scale=1.0	">
+
+</head>
+
+<body>
+
+<div class = "logo">
+<a href="CEhome.html">
+<img src="food logo.jpeg" alt="logo">
+</a>
+</div>
+
+<h1> Culinary Eatery </h1>
+<h2> Indulge in the Art of Fresh, Flavourful Cuisine </h2>
+
+<hr class="CE">
+<h3> 
+<ul class="nav">
+  <li class="nav-item">
+  <nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+     <a class="nav-link Home" aria-current="page" href="Home.html"> Home </a>
+	</nav>
+  </li>
+  <li class="nav-item">
+  <nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+    <a class="nav-link" href="IndianCuisine.html">Indian Cuisine</a>
+	</nav>
+  </li>
+  <li class="nav-item">
+  <nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+    <a class="nav-link" href="IndianDessert.html">Indian Dessert</a>
+	</nav>
+  </li>
+  <li class="nav-item">
+  <nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+    <a class="nav-link" href="OrderNow.html">Order Now</a>
+	</nav>
+  </li>
+</ul>
+</h3>
+
+<! generating clickable image to show description..>
+
+<div class="IC">
+
+<div class="food1">
+
+<! onclick feature to make the image clickable>
+<div id="info1" onclick="description()">
+<img src="Biryani.jpeg" alt="Biryani">
+</div>
+
+<! image caption and hidden image description..>
+<figure>
+<figcaption> Biryani </figcaption>
+<div id="description" style="display:none;">
+	<h6> <b>
+		fluffy basmati rice layered over tender & succulent pieces of meat, accompanied with the mesmerizing aromas of spices, herbs & caramelized onions </b>
+	</h6>
+</div> <! closing desc div...>
+</figure>
+</div> <! closing food1 div...>
+
+<!JS for toggling description visibility...>
+<script type="text/javascript">
+function description()
+{
+var desc = document.getElementById("description");
+if(desc.style.display === "none"){ 
+   desc.style.display = "block";
+} else{
+	desc.style.display = "none";
+}
+}
+</script>
+
+<div class="food2">	
+
+<div id="info2" onclick="description2()">
+<img src="Idli.jpeg" alt="Idli">
+</div> 
+<figure> 
+<figcaption> Idli and Chutney </figcaption>
+<div id="description2" style="display:none;">
+	<h7> <b>
+		Idli is a soft, fluffy, steamed cake made from fermented rice and black lentil batter, Coconut chutney is a traditional South Indian condiment made by blending fresh coconut meat with chillies, cumin, ginger and salt </b>
+	</h7>
+</div>
+</figure>
+</div>
+
+<!JS for toggling description visibility...>
+<script type="text/javascript">
+function description2()
+{
+var desc2 = document.getElementById("description2");
+if(desc2.style.display === "none"){ 
+   desc2.style.display = "block";
+} else{
+	desc2.style.display = "none";
+}
+}
+</script>
+
+<div class="food3"> 
+
+<div id="info3" onclick="description3()">
+<img src="VegMeal.jpeg" alt="VegMeal">
+</div>
+
+<figure>
+<figcaption> <b>Authentic South Indian Veg meal</b> </figcaption>
+<div id="description3" style="display:none;">
+	<h9>
+		Rice, dal, curried vegetables, chutney, pickles, papad and a sweet dish to finish the meal
+	</h9>
+</div>
+</figure>
+</div>
+
+<script type="text/javascript">
+function description3()
+{
+var desc3 = document.getElementById("description3");
+if(desc3.style.display === "none"){ 
+   desc3.style.display = "block";
+} else{
+	desc3.style.display = "none";
+}
+}
+</script>
+
+<div class="food4">
+<div id="info4" onclick="description4()">
+<img src="NaanBC.jpeg" alt="NaanBC">
+</div>
+
+<figure>
+<figcaption> <b> Butter Naan with Butter Chicken </b> </figcaption>
+<div id="description4" style="display:none;">
+<h11>
+	Butter Chicken is a classic Indian dish made with marinated & grilled chicken (Tandoori chicken), simmered in a creamy tomato gravy/curry.
+	Naan is a leavened flatbread cooked in a tandoor (clay oven)
+</h11>
+</div>
+</figure>
+</div>
+
+
+<script type="text/javascript">
+function description4()
+{
+var desc4 = document.getElementById("description4");
+if(desc4.style.display === "none"){ 
+   desc4.style.display = "block";
+} else{
+	desc4.style.display = "none";
+}
+}
+</script>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

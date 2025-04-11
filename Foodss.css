@@ -29,27 +29,69 @@ hr.CE
 }
 h3
 {
+	font-family: "Bebas Neue", sans-serif;
 	text-align: center;
 	word-spacing: 5px;
 	background-color: transparent;
 	color: black;
 }
 
-.navbar
+.nav-item
 {
 	word-spacing: 2px;
+	display: flex;
+	gap: 50px;
+	justify-content: center;
+	/*bottom: 20px; */
+}
+.navbar
+{
+	text-align: center;
+	justify-content: center;
+}
+.dicegame img
+{
+	property: opacity, values: (0:0);
+	border-radius: 5px;
+	height: 50px;
+	width: 80px;
+	background-color: transparent;
+	padding-left: 20px;
 }
 p1
 {
+	padding-left: 5px;
+}
+p2
+{
+	padding-left: 5px;
+	bottom: 20px;
+}
+p3
+{
+	padding-left: 5px;
+}
+h4
+{
 	text-align: center;
 }
-
+h5
+{
+	text-align: center;
+}
+	
+form.order
+{
+	text-align: center;
+}
 .IC
 {
 	display:flex;
 	justify-content: center;
 	margin-bottom: 10%;
+	padding:20px;
 }
+/*Styling food1 image*/
 .food1 img
 {
 	display: flex;
@@ -59,6 +101,7 @@ p1
 	border-radius: 10px;
 	margin-left: 50px;
 	margin-right: 50px;
+	cursor: pointer; /*cursor changes to pointer, that denotes its clickable*/
 }
 .food2 img
 {
@@ -69,6 +112,7 @@ p1
 	border-radius: 10px;
 	margin-left: 50px;
 	margin-right: 50px;
+	cursor: pointer; /*cursor changes to pointer, that denotes its clickable*/
 }
 .food3 img
 {
@@ -79,6 +123,7 @@ p1
 	border-radius: 10px;
 	margin-left: 50px;
 	margin-right: 50px;
+	cursor: pointer; /*cursor changes to pointer, that denotes its clickable*/
 }
 .food4 img
 {
@@ -89,6 +134,7 @@ p1
 	border-radius: 10px;
 	margin-left: 50px;
 	margin-right: 50px;
+	cursor: pointer; /*cursor changes to pointer, that denotes its clickable*/
 }
 
 .ID
@@ -96,6 +142,7 @@ p1
 	display:flex;
 	justify-content: center;
 	margin-bottom: 10%;
+	padding:20px;
 }
 .d1 img
 {
@@ -106,6 +153,7 @@ p1
 	border-radius: 10px;
 	margin-left: 50px;
 	margin-right: 50px;
+	cursor: pointer; /*cursor changes to pointer, that denotes its clickable*/
 }
 .d2 img
 {
@@ -116,6 +164,7 @@ p1
 	border-radius: 10px;
 	margin-left: 50px;
 	margin-right: 50px;
+	cursor: pointer; /*cursor changes to pointer, that denotes its clickable*/
 }
 .d3 img
 {
@@ -126,6 +175,7 @@ p1
 	border-radius: 10px;
 	margin-left: 50px;
 	margin-right: 50px;
+	cursor: pointer; /*cursor changes to pointer, that denotes its clickable*/
 }
 .d4 img
 {
@@ -136,6 +186,7 @@ p1
 	border-radius: 10px;
 	margin-left: 50px;
 	margin-right: 50px;
+	cursor: pointer; /*cursor changes to pointer, that denotes its clickable*/
 }
 figure 
 {
@@ -155,6 +206,11 @@ figcaption
 }
 
 #info1
+{
+	text-align: center;
+	word-spacing: 2px;
+}
+#info2
 {
 	text-align: center;
 	word-spacing: 2px;
