@@ -1,0 +1,195 @@
+<!Doctype HTML>
+
+<html lang="en">
+	<head> 
+		<title> Culinary Eatery </title>
+		<link href="https://fonts.googleapis.com/css2?family=Underdog&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="CSS/style.css">
+		<link rel="bootstrap" href="CSS/bootstrap.css">
+		<link rel="bootstrapbundle" href="JS/bootstrap.bundle.js">
+		<meta name="viewport" content="width=device-width, initial-scale=0.9">
+
+	</head>
+	<body>
+
+		<div class = "logo">
+			<a href="index.html">
+				<img src="Images/foodlogo.jpeg" alt="logo">
+			</a>
+			</div>
+
+		<h1> Culinary Eatery </h1>
+		<h2> Indulge in the Art of Fresh, Flavourful Cuisine </h2>
+
+		<hr class="CE">
+
+		<div class="navigation">
+			<nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+				<div class="container-fluid">
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link Home" aria-current="page" href="index.html"> Home </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="IndianCuisine.html">Indian Cuisine</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="IndianDessert.html">Indian Dessert</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="KenyaCuisine.html">Kenyan Cuisine</a>
+						</li>	
+						<li class="nav-item">
+							<a class="nav-link" href="AboutUs.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="OrderNow.html">Order Now</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>			
+
+<!--generating clickable image to show description-->
+
+	<div class="IC">
+		
+		<div class="container text-center my-4">
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4"> 
+			
+				<div class="col">
+				<!--onclick feature to make the image clickable-->		
+					<div class="food1" onclick="description()">					
+				<!--image caption and hidden image description-->
+						<figure>
+						<img src="Images/Biryani.jpeg" class="img-fluid" alt="Biryani">
+							<figcaption> <b> €15 Biryani </b> </figcaption>
+						</figure>
+							<div id="description" style="display:none;">
+								<p class="text-sm-start"> 
+									Fluffy basmati rice layered over tender & succulent pieces of meat, accompanied with the mesmerizing aromas of spices, herbs & caramelized onions 
+								</p>
+							</div> <!--closing desc div-->					
+					</div> <!--closing food1 div-->
+				</div>	
+
+	<!--JS for toggling description visibility-->
+
+	<script>
+	function description()
+		{
+		var desc = document.getElementById("description");
+			if(desc.style.display === "none"){ 
+				desc.style.display = "block";
+			} else{
+				desc.style.display = "none";
+			}
+		}
+	</script>
+
+	<div class="col">	
+		<div class="food2" onclick="description2()">		
+			<figure> 
+			<img src="Images/Idli.jpeg" alt="Idli">
+				<figcaption class="text-center"> <b> €10 Idli and Chutney </b> </figcaption>
+			</figure>
+					<div id="description2" style="display:none;">
+						<p class="text-sm-start">
+							Idli is a soft, fluffy, steamed cake made from fermented rice and black lentil 
+							Coconut chutney is a traditional South Indian condiment made by blending fresh coconut meat 
+							with chillies, cumin, ginger and salt
+						</p>
+					</div>
+		</div>
+	</div>		
+
+	<!--JS for toggling description visibility-->
+	<script>
+	function description2()
+		{
+		var desc2 = document.getElementById("description2");
+			if(desc2.style.display === "none"){ 
+				desc2.style.display = "block";
+			} else{
+				desc2.style.display = "none";
+			}
+		}
+	</script>
+
+		<div class="col"> 
+			<div class="food3" onclick="description3()">				
+				
+				<figure>
+				<img src="Images/VegMeal.jpeg" class="img-fluid" alt="Veg Meal">
+					<figcaption> <b> €12 Indian Veg meal </b> </figcaption>
+				</figure>
+						<div id="description3" style="display:none;">
+							<p class="text-sm-start">
+								Rice, dal, curried vegetables, chutney, pickles, papad and a sweet dish to finish the meal
+							</p>
+						</div>			
+			</div>
+		</div>	
+
+	<script>
+	function description3()
+		{
+		var desc3 = document.getElementById("description3");
+			if(desc3.style.display === "none"){ 
+				desc3.style.display = "block";
+			} else{
+				desc3.style.display = "none";
+			}
+		}
+	</script>
+
+		<div class="col">
+			<div class="food4" onclick="description4()">							
+			<figure>
+			<img src="Images/NaanBC.jpeg" class="img-fluid" alt="Naan Butter Chicken">
+				<figcaption> <b> €25 Butter Naan with Chicken </b> </figcaption>
+			</figure>
+				<div id="description4" style="display:none;">
+					<p class="text-sm-start">
+						Butter Chicken is a classic Indian dish made with marinated & grilled chicken.
+					</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>	
+
+<script>
+	function description4()
+		{
+		var desc4 = document.getElementById("description4");
+			if(desc4.style.display === "none"){ 
+				desc4.style.display = "block";
+			} else{
+				desc4.style.display = "none";
+			}
+		}
+</script>
+		
+</div>
+
+<hr class="CEbottom">
+
+
+<footer>
+
+<p> Copyright &copy; 2025 Culinary Eatery, All Rights Reserved - Privacy Policy </p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+</html>
