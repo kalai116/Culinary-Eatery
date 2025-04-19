@@ -1,0 +1,180 @@
+<!Doctype HTML>
+
+<html lang="en">
+	<head> 
+		<title> Culinary Eatery </title>
+			<link href="https://fonts.googleapis.com/css2?family=Underdog&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+			<meta charset="UTF-8">
+			<meta name='description' content="aauthentic Indian, kenyan cuisine, biryani, veg meal, naan butter chicken, ugali, choma">
+			<meta name='keywords' content="Indian food and kenyan food, dessert, authentic, ingredient, biryani,chicken,beef, veg">
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+			<link rel="bootstrap" href="CSS/bootstrap.css">
+			<link rel="stylesheet" href="CSS/style.css">
+			<link rel="bootstrapbundle" href="JS/bootstrap.bundle.js">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	</head>
+	<body>
+
+		<div class = "logo">
+			<a href="index.html">
+				<img src="Images/foodlogo-min.jpeg" alt="logo">
+			</a>
+			</div>
+
+		<h1> Culinary Eatery </h1>
+		<h2> Indulge in the Art of Fresh, Flavourful Cuisine </h2>
+
+		<hr class="CE">
+
+		<div class="navigation">
+			<nav class="navbar bg-transparent border-bottom border-body" data-bs-theme="transparent">
+				<div class="container-fluid">
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link Home" aria-current="page" href="index.html"> Home </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="IndianCuisine.html">Indian Cuisine</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="IndianDessert.html">Indian Dessert</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="KenyaCuisine.html">Kenyan Cuisine</a>
+						</li>	
+						<li class="nav-item">
+							<a class="nav-link" href="AboutUs.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="OrderNow.html">Order Now</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>			
+
+<div class="ID">
+	<div class="container text-center my-4">
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+		
+			<div class="col">
+				<div class="d1" onclick="ddescription1()">				
+					<figure>
+					<img src="Images/Laddu-min.jpeg" class="img-fluid" alt="laddoo">
+						<figcaption> <b> €18 Motichoor laddoo </b> </figcaption>
+					</figure>
+						<div id="ddescription1" style="display:none;">
+							<p class="text-sm-start">
+								Delicious sweet ladoo made with gram flour batter, nuts, sugar, cardamom and ghee 
+							</p>
+						</div>
+				</div>
+			</div>
+<script>
+function ddescription1()
+	{
+	var ddesc1 = document.getElementById("ddescription1");
+		if(ddesc1.style.display === "none"){ 
+			ddesc1.style.display = "block";
+		} else{
+			ddesc1.style.display = "none";
+		}
+	}
+</script>
+
+
+	<div class="col">
+		<div class="d2" onclick="ddescription2()">			
+			<figure>
+			<img src="Images/GulabJamun-min.jpeg" class="img-fluid" alt="Gulab Jamun">
+				<figcaption> <b> €10 Gulab Jaamun </b> </figcaption>
+			</figure>
+				<div id="ddescription2" style="display:none;">
+					<p class="text-sm-start">
+						Soft, melt-in-your-mouth, milk-based balls, fried and soaked in a sweet, rose-flavored syrup
+					</p>
+				</div>
+		</div>
+	</div>
+<script>
+function ddescription2()
+	{
+	var ddesc2 = document.getElementById("ddescription2");
+		if(ddesc2.style.display === "none"){ 
+			ddesc2.style.display = "block";
+		} else{
+			ddesc2.style.display = "none";
+		}
+	}
+</script>
+
+	<div class="col">
+		<div class="d3" onclick="ddescription3()">		
+			<figure>
+			<img src="Images/Jalebi-min.jpeg" class="img-fluid" alt="Jalebi">
+				<figcaption> <b> €5 Jalebi </b> </figcaption>
+			</figure>
+				<div id="ddescription3" style="display:none;">
+					<p class="text-sm-start">
+						A crispy, deep-fried Indian sweet, soaked in sweet syrup, often flavored with saffron and cardamom, and served warm
+					</p>
+				</div>			
+		</div>
+	</div>	
+
+<script>
+function ddescription3()
+	{
+	var ddesc3 = document.getElementById("ddescription3");
+		if(ddesc3.style.display === "none"){ 
+			ddesc3.style.display = "block";
+		} else{
+			ddesc3.style.display = "none";
+		}
+	}
+</script>
+
+	<div class="col">
+		<div class="d4" onclick="ddescription4()">	
+			<figure>
+			<img src="Images/Kulfi-min.jpeg" class="img-fluid" alt="Kulfi">
+				<figcaption> <b> €7 Kulfi </b> </figcaption>
+			</figure>
+					<div id="ddescription4" style="display:none">
+						<p class="text-sm-start">
+							Traditional Indian frozen dessert, richer and denser than ice cream, made with milk, sugar, and fragrant spices like cardamom and saffron, offering a creamy and indulgent experience
+						</p>
+					</div>			
+		</div>
+	</div>
+	
+	</div>
+</div>	
+<script>
+function ddescription4()
+	{
+	var ddesc4 = document.getElementById("ddescription4");
+		if(ddesc4.style.display === "none"){ 
+			ddesc4.style.display = "block";
+		} else{
+			ddesc4.style.display = "none";
+		}
+	}
+</script>
+
+</div>
+
+<hr class="CEbottom">
+<footer>
+
+<p> Copyright &copy; 2025 Culinary Eatery, All Rights Reserved - Privacy Policy </p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</body>
+</html>
